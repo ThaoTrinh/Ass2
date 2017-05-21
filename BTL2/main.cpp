@@ -3,6 +3,8 @@
 #include "Docdulieu.h"
 #include "switch.h"
 #include "tuychon.h"
+#include "Dangki_taikhoan.h"
+#include "Doi_matkhau.h"
 using namespace std;
 
 
@@ -80,20 +82,15 @@ int main() {
 					else {
 						break;
 					}
-				/*}
-				else break;
-			}*/
-					//else break;
+				
 				}
 				case 3: return 0;
 			}
 		}
 		else {
 			if (!tuychinh) {
-				// cout << "Ban da dang nhap vo" << endl;
-				// Switch_docgia();
-				Switch_Chucnang(Dangnhap, Ngdung_dangnhap);
+				Switch_Chucnang(Dangki_taikhoan,Dangnhap, Ngdung_dangnhap);
 			}
-		}    // ket thuc man hinh dua tren doi tuong
+		}   
 	}        // ket thuc while
 }    // ket thuc main

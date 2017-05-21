@@ -1,7 +1,7 @@
 0|hoten|namsinh|diachi|truong|khoa
-Trinh Thi Thu Thao|1998|Phu Yen|Bach Khoa|May tinh
+1|Trinh Thi Thu Thao|1998|Phu Yen|Bach Khoa|May tinh|
 
-8|anhkhoa|1998|govap|bk|mt
-9|thao|1998|py|bk|mt
-10|thuan|bd|bd|bk|mt
-11|hao|1998|bd|bk|mt
+2|anhkhoa|1998|govap|bk|mt|
+9|thao|1998|py|bk|mt|
+10|thuan|bd|bd|bk|mt|
+11|hao|1998|bd|bk|mt|

@@ -62,8 +62,10 @@
   <ItemGroup>
     <ClCompile Include="Chucnang.cpp" />
     <ClCompile Include="Chucnang_hientai.cpp" />
+    <ClCompile Include="Dangki_taikhoan.cpp" />
     <ClCompile Include="dangnhap.cpp" />
     <ClCompile Include="Docdulieu.cpp" />
+    <ClCompile Include="Doi_matkhau.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Switch.cpp" />
     <ClCompile Include="thongtin_canhan.cpp" />
@@ -72,8 +74,10 @@
   <ItemGroup>
     <ClInclude Include="Chucnag_hientai.h" />
     <ClInclude Include="Chucnang.h" />
+    <ClInclude Include="Dangki_taikhoan.h" />
     <ClInclude Include="dangnhap.h" />
     <ClInclude Include="Docdulieu.h" />
+    <ClInclude Include="Doi_matkhau.h" />
     <ClInclude Include="switch.h" />
     <ClInclude Include="thongtin_canhan.h" />
     <ClInclude Include="thuvien_chuan.h" />
