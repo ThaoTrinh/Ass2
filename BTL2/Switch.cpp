@@ -2,6 +2,8 @@
 #include "tuychon.h"
 #include "Docdulieu.h"
 #include "Chucnang.h"
+#include "thongtin_canhan.h"
+#include "Doi_matkhau.h"
 using namespace std;
 
 int Caidat(){
@@ -55,12 +57,12 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 
 
 
-void Switch_Chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 
 	switch(Tuychon_chucnang(Dangnhap,Ngdung_dangnhap)){
 		case 1:{
 				if(Ngdung_dangnhap.ngdung.docgia==1){
-				Switch_docgia(Dangnhap,Ngdung_dangnhap);
+				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
 				}
 				else {
 					cout<<"Chuc nang cua ban chua duoc kich hoat."<<endl;
@@ -80,7 +82,7 @@ void Switch_Chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 			/*Switch_thuthu(Dangnhap,Ngdung_dangnhap);
 			break;*/{
 			if(Ngdung_dangnhap.ngdung.thuthu==2){
-				Switch_thuthu(Dangnhap,Ngdung_dangnhap);
+				Switch_thuthu(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
 				}
 				else {
 					cout<<"Chuc nang cua ban chua duoc kich hoat."<<endl;
@@ -102,7 +104,7 @@ void Switch_Chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 			break;*/
 			{
 				if(Ngdung_dangnhap.ngdung.quanli==3){
-					Switch_quanli(Dangnhap,Ngdung_dangnhap);
+					Switch_quanli(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
 				}
 				else {
 					cout<<"Chuc nang cua ban chua duoc kich hoat."<<endl;
@@ -125,12 +127,21 @@ void Switch_Chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	
 }
 
-void Switch_docgia(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_docgia(Dangnhap,Ngdung_dangnhap)){
 					case 1: break;
 					case 2: break;
 					case 3:break;
-					case 4:break;
+					case 4:{
+						if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+						cout<<"Khong tim thay thong tin"<<endl;	
+						break;
+						}
+						else {
+							system("pause");
+							break;
+					    }
+				   }
 					case 5:break;
 					case 6:
 						Caidat_switch(Dangnhap,Ngdung_dangnhap);
@@ -141,7 +152,7 @@ void Switch_docgia(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 				}
 }
 
-void Switch_thuthu(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_thuthu(Dangnhap,Ngdung_dangnhap)){
 		case 1:
 			break;
@@ -160,12 +171,22 @@ void Switch_thuthu(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 		case 8:
 			Caidat_switch(Dangnhap,Ngdung_dangnhap);
 			break;
-		case 9:
+		case 9:{
+			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+				cout<<"Khong tim thay thong tin"<<endl;	
+				break;
+			}
+			else {
+				system("pause");
+				break;
+			}
+		}
+		case 10:
 			return ;
 	}
 }
 
-void Switch_quanli(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_Quanli(Dangnhap,Ngdung_dangnhap)){
 	case 1:
 		break;
@@ -176,7 +197,18 @@ void Switch_quanli(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	case 4:
 		Caidat_switch(Dangnhap,Ngdung_dangnhap);
 		break;
-	case 5:
+	case 5:{
+		if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+			cout<<"Khong tim thay thong tin"<<endl;	
+			break;
+		}
+		else {
+			system("pause");
+			break;
+		}
+	}
+
+	case 6:
 		return ;
 	}
 
