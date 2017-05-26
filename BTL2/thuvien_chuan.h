@@ -23,6 +23,7 @@ typedef struct{
 	int Maso;
 	std::string Taikhoan;
 	std::string Matkhau;
+	std::string Biethieu;
 	Chucnang ngdung;
 } Nguoidung;
 

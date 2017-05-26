@@ -4,6 +4,7 @@
 #include "Chucnang.h"
 #include "thongtin_canhan.h"
 #include "Doi_matkhau.h"
+#include "file_chucnang.h"
 using namespace std;
 
 int Caidat(){
@@ -28,22 +29,22 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 	while(true){
 		switch(Caidat()){
 			case 1:{
-				Themchucnang(Dangnhap,Ngdung_dangnhap);
+				
 				break;
 			}
 
 			case 2:
-				Huychucnang(Dangnhap,Ngdung_dangnhap);
+				
 				break;
 			case 3:break;
 			case 4:
+				cin.ignore();
 				if(!Doimatkhau(Dangnhap,Ngdung_dangnhap)){
 					tuychinh=false;
 					break;
 				}
 				else{
-					cout<<"Doi mat khau thanh cong"<<endl;
-					system("pause");
+					
 					break;
 				}
 			case 5:
@@ -155,8 +156,10 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_thuthu(Dangnhap,Ngdung_dangnhap)){
 		case 1:
+			//file_themchucnang();
 			break;
 		case 2:
+			//file_huychucnang();
 			break;
 		case 3:
 			break;
@@ -189,8 +192,13 @@ void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_Quanli(Dangnhap,Ngdung_dangnhap)){
 	case 1:
+		if(!file_themchucnang()){
+			cout<<"Loi chuc nang"<<endl;
+		}
+		else cout<<"Thanh cong"<<endl;
 		break;
 	case 2:
+		//file_huychucnang();
 		break;
 	case 3:
 		break;

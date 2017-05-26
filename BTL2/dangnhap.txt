@@ -1,11 +1,5 @@
-1     trinhthithuthao     1234
-2     nguyenanhkhoa   	  1234
-3     thuthao		  1234
-4     anhkhoa		  1234
-5     quangthuan	  1234
-6     luonghao	          1234
-7     huuminh	          1234
-8	khoa	1234
-9	thao	1234
-10	thuan	1234
-11	hao	1234
+1	thuthao	thuthao	thaotrinh
+2	anhkhoa	1234		anhkhoa
+3	thuan	1234		quangthuan
+4	hao 	luonghao	luonghao
+5	minh	1234		huuminh

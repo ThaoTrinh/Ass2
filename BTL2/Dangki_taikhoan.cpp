@@ -27,11 +27,14 @@ bool Dangki(vector<Nguoidung>& Dangnhap) {
 	}
 	cout << "Nhap mat khau: ";
 	getline(cin, B.Matkhau);
+	cout<<"Nhap biet hieu: ";
+	getline(cin,B.Biethieu);
+
 	Dangnhap.push_back(B);// do dai luc nay + 1, nhung lay do dai cu
 	// nguoi dung moi se co so chieu toi la [dodai]
 	FILE << endl;
 	FILE << Dangnhap[dodai - 1].Maso + 1 << "	" << B.Taikhoan << "	"
-	     << B.Matkhau;
+		<< B.Matkhau<<"	"<<B.Biethieu;
 	FILE.close();
 	return true;
 }

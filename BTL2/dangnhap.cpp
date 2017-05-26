@@ -21,6 +21,7 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 				Ngdung_dangnhap.Maso     = i + 1;
 				Ngdung_dangnhap.Taikhoan = Dangnhap[i].Taikhoan;
 				Ngdung_dangnhap.Matkhau  = Dangnhap[i].Matkhau;
+				Ngdung_dangnhap.Biethieu =Dangnhap[i].Biethieu;
 				// kiemtra = true;
 				// break;
 				return true;

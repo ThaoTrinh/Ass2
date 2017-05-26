@@ -12,7 +12,7 @@ bool Nhap_dulieu(vector<Nguoidung>& Dangnhap){
 	Nguoidung A;
 	string bien;
 	int bien1;
-	string  bien2, bien3;
+	string  bien2, bien3,bien4;
 
 	while (getline(FILE, bien)){
 		stringstream tach(bien);
@@ -20,10 +20,11 @@ bool Nhap_dulieu(vector<Nguoidung>& Dangnhap){
 			continue;
 		
 		//cout << bien << endl;
-		tach >> bien1 >> bien2 >> bien3;
+		tach >> bien1 >> bien2 >> bien3>>bien4;
 		A.Maso = bien1;
 		A.Taikhoan = bien2;
 		A.Matkhau = bien3;
+		A.Biethieu =bien4;
 
 		Dangnhap.push_back(A);
 	}

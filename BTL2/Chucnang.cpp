@@ -33,7 +33,15 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
-					cout << "Yeu cau da duoc ghi lai";
+					fstream FILE("themchucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
+					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
 					kiem = true;
 				}
@@ -53,8 +61,16 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
-					cout << "Yeu cau da duoc ghi lai";
-					// system("pause");
+					fstream FILE("themchucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
+					cout << "Yeu cau da duoc ghi lai"<<endl;
+					system("pause");
 					break;
 					// return true;
 				};
@@ -74,7 +90,15 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
-					cout << "Yeu cau da duoc ghi lai";
+					fstream FILE("themchucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
+					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
 					kiem=true;
 				};
@@ -115,8 +139,18 @@ bool Huychucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
-					cout << "Yeu cau da duoc ghi lai";
+					fstream FILE("huychucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
+					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
+					return true;
+					break;
 				};
 				break;
 			case 2:
@@ -136,10 +170,19 @@ bool Huychucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
+					fstream FILE("huychucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
 					cout << "Yeu cau da duoc ghi lai" << endl;
-					// system("pause");
+					system("pause");
+					return true;
 					break;
-					// return true;
+					
 				};
 				break;
 			case 3:
@@ -160,8 +203,17 @@ bool Huychucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					}
 				}
 				else {
+					fstream FILE("huychucnang.txt");
+						if(!FILE.is_open()){
+							cout<<"loi mo file"<<endl;
+						}
+
+						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+						FILE.close();
 					cout << "Yeu cau da duoc ghi lai" << endl;
 					system("pause");
+					return true;
 					break;
 				};
 				break;

@@ -69,6 +69,7 @@ int Tuychon_Quanli(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	return chon;
 }
 
+
 int Tuychon_chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	system("cls");
 	cout<<"Ban muon dang nhap voi tu cach la: "<<endl;

@@ -17,7 +17,6 @@ bool Thongtin_canhan(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 	while(getline(FILE,bien)){
 		if(bien.empty())
 			continue;
-	       // cout<<bien.length()<<endl;
 			stringstream tach(bien);
 		tach>>bien1;
 			if(bien1!=Ngdung_dangnhap.Maso) continue;

@@ -5,6 +5,7 @@
 #include "tuychon.h"
 #include "Dangki_taikhoan.h"
 #include "Doi_matkhau.h"
+
 using namespace std;
 
 
@@ -35,6 +36,7 @@ int main() {
 
 			switch (Tuychon()) {
 				case 1:
+				{
 					cin.ignore();
 					while (!kiemtra) {
 						kiemtra = Log_in(Dangnhap, Ngdung_dangnhap);
@@ -58,7 +60,10 @@ int main() {
 							system("pause");
 						}
 					}
+			}
+					//Doiten();
 					break;
+
 				case 2:{
 					cin.ignore();//vua chon so ma chuyen qua nhap chuoi
 					 cout<<"Ban muon dang ki tai khoan(y/n): ";

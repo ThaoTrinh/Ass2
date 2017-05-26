@@ -39,6 +39,21 @@
     <ClCompile Include="thongtin_canhan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Dangki_taikhoan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doi_matkhau.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Capnhat_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_chucnang.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="thuvien_chuan.h">
@@ -63,6 +78,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="thongtin_canhan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dangki_taikhoan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doi_matkhau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Capnhat_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_chucnang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
