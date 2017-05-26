@@ -143,3 +143,29 @@ bool trong_chucnang(){
 
 		return true;
 }
+
+bool trongchucnang(){
+	
+
+		fstream file("trong.txt");
+		if(!file.is_open()){
+			cout<<"Loi mo file"<<endl;
+			return false;
+		}
+
+		fstream nhap("huychucnang.txt");
+		if(!nhap.is_open()){
+			cout<<"Loi mo file"<<endl;
+			return false;
+		}
+
+		string str;
+				while(getline(file,str)){
+					nhap<<str<<endl;
+				}
+
+		nhap.close();
+		file.close();
+
+		return true;
+}

@@ -6,5 +6,6 @@
 bool capnhat_doimatkhau(std::vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap);
 bool capnhat_dangnhap(std::vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap);
 bool trong_chucnang();
+bool trongchucnang();
 //bool chucnang_trong();
 #endif

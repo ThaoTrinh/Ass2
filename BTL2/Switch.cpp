@@ -29,12 +29,12 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 	while(true){
 		switch(Caidat()){
 			case 1:{
-				
+				Themchucnang(Dangnhap,Ngdung_dangnhap);
 				break;
 			}
 
 			case 2:
-				
+				Huychucnang(Dangnhap,Ngdung_dangnhap);
 				break;
 			case 3:break;
 			case 4:
@@ -195,9 +195,12 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 		if(!file_themchucnang()){
 			cout<<"Loi chuc nang"<<endl;
 		}
-		else cout<<"Thanh cong"<<endl;
+		
 		break;
 	case 2:
+		if(!file_huychucnang()){
+			cout<<"Loi chuc nang"<<endl;
+		}
 		//file_huychucnang();
 		break;
 	case 3:

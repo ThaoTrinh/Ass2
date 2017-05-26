@@ -1,4 +1,4 @@
-1	thuthao	thuthao	thaotrinh
+1	thuthao	thao	thaotrinh
 2	anhkhoa	1234		anhkhoa
 3	thuan	1234		quangthuan
 4	hao 	luonghao	luonghao
