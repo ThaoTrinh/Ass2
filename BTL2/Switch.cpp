@@ -5,6 +5,8 @@
 #include "thongtin_canhan.h"
 #include "Doi_matkhau.h"
 #include "file_chucnang.h"
+#include "lichsu_dangnhap.h"
+
 using namespace std;
 
 int Caidat(){
@@ -79,9 +81,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			
 			break;
 		 }
-		case 2:
-			/*Switch_thuthu(Dangnhap,Ngdung_dangnhap);
-			break;*/{
+		case 2:{
 			if(Ngdung_dangnhap.ngdung.thuthu==2){
 				Switch_thuthu(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
 				}
@@ -100,10 +100,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			break;
 		 }
 	
-		case 3:
-			/*Switch_quanli(Dangnhap, Ngdung_dangnhap);
-			break;*/
-			{
+		case 3:{
 				if(Ngdung_dangnhap.ngdung.quanli==3){
 					Switch_quanli(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
 				}
@@ -122,7 +119,22 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			break;
 		 }
 		case 4:
+			dangnhap_lichsu(Ngdung_dangnhap);
+			system("pause");
+			break;
+		case 5:
 			kiemtra=false;
+			time_t now = time(0);
+				localtime(&now);
+				char* dangxuat = ctime(&now);
+				fstream file("lichsu_dangnhap.txt",ios::app);
+				if(!file.is_open()){
+					cout<<"loi mo file"<<endl;
+					
+				}
+				file<<Ngdung_dangnhap.Maso<<"	"<<"0	"<<dangxuat;
+
+				file.close();
 			break;
 	}
 	

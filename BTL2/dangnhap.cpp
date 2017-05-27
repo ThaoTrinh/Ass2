@@ -22,6 +22,19 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 				Ngdung_dangnhap.Taikhoan = Dangnhap[i].Taikhoan;
 				Ngdung_dangnhap.Matkhau  = Dangnhap[i].Matkhau;
 				Ngdung_dangnhap.Biethieu =Dangnhap[i].Biethieu;
+
+				//ghi lai thoi gian dang nhap
+				time_t now = time(0);
+				localtime(&now);
+				char* dangnhap = ctime(&now);
+				fstream file("lichsu_dangnhap.txt",ios::app);
+				if(!file.is_open()){
+					cout<<"loi mo file"<<endl;
+					return false;
+				}
+				file<<Ngdung_dangnhap.Maso<<"	"<<"1	"<<dangnhap;
+
+				file.close();
 				// kiemtra = true;
 				// break;
 				return true;

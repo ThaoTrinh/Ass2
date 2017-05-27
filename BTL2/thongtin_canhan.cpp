@@ -18,7 +18,7 @@ bool Thongtin_canhan(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 		if(bien.empty())
 			continue;
 			stringstream tach(bien);
-		tach>>bien1;
+			tach>>bien1;
 			if(bien1!=Ngdung_dangnhap.Maso) continue;
 			else {
 				int vitri[5];

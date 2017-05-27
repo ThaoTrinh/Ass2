@@ -8,6 +8,7 @@
 #include <cstring>
 #include <cmath>
 #include <vector>
+#include <ctime>
 
 extern bool kiemtra;
 extern bool tuychinh;

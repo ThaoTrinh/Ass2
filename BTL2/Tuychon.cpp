@@ -43,7 +43,7 @@ int Tuychon_thuthu(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"5.	Gui thong bao"<<endl;
 	cout<<"6.	Thong ke sach"<<endl;
 	cout<<"7.	Thong ke nguoi dung"<<endl;
-	cout<<"8.	Caidat"<<endl;
+	cout<<"8.	Cai dat"<<endl;
 	cout<<"9.	Thong tin ca nhan"<<endl;
 	cout<<"10.	Thoat"<<endl;
 	cout<<"Lua chon cua ban la: ";
@@ -76,7 +76,8 @@ int Tuychon_chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"1.	Doc gia"<<endl;
 	cout<<"2.	Thu thu"<<endl;
 	cout<<"3.	Quan li nguoi dung"<<endl;
-	cout<<"4.	Dangxuat"<<endl;
+	cout<<"4.	Lich su dang nhap"<<endl;
+	cout<<"5.	Dangxuat"<<endl;
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
