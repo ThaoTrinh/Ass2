@@ -148,13 +148,14 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 					case 4:{
 						if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
 						cout<<"Khong tim thay thong tin"<<endl;	
-						break;
+						//break;
 						}
 						else {
 							system("pause");
-							break;
+							
 					    }
 				   }
+						   break;
 					case 5:break;
 					case 6:
 						Caidat_switch(Dangnhap,Ngdung_dangnhap);
@@ -168,10 +169,10 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	switch(Tuychon_thuthu(Dangnhap,Ngdung_dangnhap)){
 		case 1:
-			//file_themchucnang();
+			
 			break;
 		case 2:
-			//file_huychucnang();
+			
 			break;
 		case 3:
 			break;

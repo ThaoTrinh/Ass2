@@ -13,6 +13,7 @@ bool Thongtin_canhan(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 
 	string bien;
 	int bien1;
+	int vitri[6];
 	string bien2, bien3, bien4,bien5, bien6;
 	while(getline(FILE,bien)){
 		if(bien.empty())
@@ -21,7 +22,7 @@ bool Thongtin_canhan(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			tach>>bien1;
 			if(bien1!=Ngdung_dangnhap.Maso) continue;
 			else {
-				int vitri[5];
+				
 				int dem=0;
 				for(int i=0;i<bien.length();i++){
 					if(bien[i]=='|'){
