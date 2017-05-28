@@ -48,7 +48,7 @@ bool Doimatkhau(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					// xoafile_dangnhap;
 					capnhat_dangnhap(Dangnhap, Ngdung_dangnhap);
 					// xoafile_doimatkhau;
-					ofstream Nhap("doimatkhau.txt");
+					ofstream Nhap("trong.txt");
 					if (!Nhap.is_open()) {
 						cout << "Loi mo file";
 					}

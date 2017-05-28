@@ -68,7 +68,7 @@ bool thongtin_dangki(
 
 	FILE << endl;
 	FILE << Dangnhap[dodai - 2].Maso + 1 << "|" << A.hoten << "|" << A.namsinh
-	     << "|" << A.diachi << "|" << A.truong << "|" << A.khoa<<"|"<<Dangki_taikhoan.size();
+	     << "|" << A.diachi << "|" << A.truong << "|" << A.khoa<<"|";
 	FILE.close();
 	return true;
 }
@@ -81,7 +81,7 @@ bool Chucnang_dangki(vector<thongtin_nguoidung>& Dangki_taikhoan, Nguoidung& Ngd
 	}
 	int dodai = Dangnhap.size();
 	FILE<<endl;
-	FILE << Dangnhap[dodai - 2].Maso + 1<<"	" << "1	0	0";
+	FILE << Dangnhap[dodai - 2].Maso + 1<<"      " << "1       0       0";
 	FILE.close();
 	return true;
 }

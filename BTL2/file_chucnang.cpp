@@ -67,6 +67,7 @@ bool file_themchucnang(){
 				//ham
 				string doi;
 				while(getline(FILE,doi)){
+					if(doi.empty()) continue;
 					stringstream tach_3(doi);
 					int doi1,doi2;
 					tach_3>>doi1>>doi2;
@@ -95,23 +96,24 @@ bool file_themchucnang(){
 						return false;
 					}
 
-				fstream sua("chucnang.txt");
+				fstream sua("trong.txt");
 					if(!sua.is_open()){
 						cout<<"Loi mo file"<<endl;
 						return false;
 					}
 				string day;
 				while(getline(lay,day)){
+					if(day.empty()) continue;
 					stringstream tach2(day);
 					int ms,dg,tt,ql;
 					tach2>>ms>>dg>>tt>>ql;
 					if(ms!=bien1) sua<<day<<endl;
 					else{
 						if(bien2==1){
-							sua<<ms<<"	"<<bien2<<" "<<tt<<"	"<<ql<<endl;
+							sua<<ms<<"	"<<"1"<<"	"<<tt<<"	"<<ql<<endl;
 						}
 						if(bien2==2){
-							sua<<ms<<"	"<<dg<<"	"<<bien2<<"	"<<ql<<endl;
+							sua<<ms<<"	"<<dg<<"	"<<"2"<<"	"<<ql<<endl;
 						}
 						if(bien2==3){
 							sua<<ms<<"	"<<dg<<"	"<<tt<<"	"<<bien2<<endl;
@@ -119,12 +121,23 @@ bool file_themchucnang(){
 					}
 
 				}
-			
+				
 				sua.close();
 				lay.close();
+				ofstream xoachucnang("chucnang.txt");
+					if (!xoachucnang.is_open()) {
+						cout << "Loi mo file";
+					}
+				trongvao_chucnang();
+				ofstream xoatrong("trong.txt");
+					if (!xoatrong.is_open()) {
+						cout << "Loi mo file";
+					}
+
 				////
 				string doi;
 				while(getline(FILE,doi)){
+					if(doi.empty()) continue;
 					stringstream tach_3(doi);
 					int doi1,doi2;
 					tach_3>>doi1>>doi2;
@@ -220,6 +233,7 @@ bool file_huychucnang(){
 				//ham
 				string doi;
 				while(getline(FILE,doi)){
+					if(doi.empty()) continue;
 					stringstream tach_3(doi);
 					int doi1,doi2;
 					tach_3>>doi1>>doi2;
@@ -248,20 +262,21 @@ bool file_huychucnang(){
 						return false;
 					}
 
-				fstream sua("chucnang.txt");
+				fstream sua("trong.txt");
 					if(!sua.is_open()){
 						cout<<"Loi mo file"<<endl;
 						return false;
 					}
 				string day;
 				while(getline(lay,day)){
+					if(day.empty()) continue;
 					stringstream tach2(day);
 					int ms,dg,tt,ql;
 					tach2>>ms>>dg>>tt>>ql;
 					if(ms!=bien1) sua<<day<<endl;
 					else{
 						if(bien2==1){
-							sua<<ms<<"	"<<"0"<<" "<<tt<<"	"<<ql<<endl;
+							sua<<ms<<"	"<<"0"<<"	"<<tt<<"	"<<ql<<endl;
 						}
 						if(bien2==2){
 							sua<<ms<<"	"<<dg<<"	"<<"0"<<"	"<<ql<<endl;
@@ -276,8 +291,20 @@ bool file_huychucnang(){
 				sua.close();
 				lay.close();
 				////
+				ofstream xoachucnang("chucnang.txt");
+					if (!xoachucnang.is_open()) {
+						cout << "Loi mo file";
+					}
+				trongvao_chucnang();
+				ofstream xoatrong("trong.txt");
+					if (!xoatrong.is_open()) {
+						cout << "Loi mo file";
+					}
+
+				/////
 				string doi;
 				while(getline(FILE,doi)){
+					if(doi.empty()) continue;
 					stringstream tach_3(doi);
 					int doi1,doi2;
 					tach_3>>doi1>>doi2;

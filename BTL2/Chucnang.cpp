@@ -44,6 +44,7 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
 					kiem = true;
+					return true;
 				}
 				break;
 			case 2:
@@ -71,6 +72,7 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 						FILE.close();
 					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
+					return true;
 					break;
 					// return true;
 				};
@@ -101,6 +103,7 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					cout << "Yeu cau da duoc ghi lai"<<endl;
 					system("pause");
 					kiem=true;
+					return true;
 				};
 				break;
 		}
