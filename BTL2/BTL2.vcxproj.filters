@@ -51,7 +51,7 @@
     <ClCompile Include="file_chucnang.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="thu.cpp">
+    <ClCompile Include="lichsudangnhap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -119,7 +119,9 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			break;
 		 }
 		case 4:
-			dangnhap_lichsu(Ngdung_dangnhap);
+			if(!dangnhap_lichsu(Ngdung_dangnhap)){
+				cout<<"Khong thuc hien duoc"<<endl;
+			}
 			system("pause");
 			break;
 		case 5:

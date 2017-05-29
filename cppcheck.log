@@ -1,0 +1,35 @@
+Cppcheck started: Sun May 21 2017 19:17:37 GMT+0700 (東南アジア標準時)
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Chucnang.cpp ...
+1/9 files checked 17% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Chucnang_hientai.cpp ...
+2/9 files checked 20% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Dangki_taikhoan.cpp ...
+3/9 files checked 30% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Docdulieu.cpp ...
+4/9 files checked 43% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Switch.cpp ...
+5/9 files checked 60% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\Tuychon.cpp ...
+6/9 files checked 70% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\dangnhap.cpp ...
+7/9 files checked 85% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\main.cpp ...
+8/9 files checked 95% done
+Checking d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp ...
+9/9 files checked 100% done
+
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\Dangki_taikhoan.cpp:30]: (error) Uninitialized struct member: B.Maso
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\Dangki_taikhoan.cpp:30]: (error) Uninitialized struct member: B.ngdung
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\Dangki_taikhoan.cpp:64]: (error) Uninitialized struct member: A.maso
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\Docdulieu.cpp:27]: (error) Uninitialized struct member: A.ngdung
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\dangnhap.cpp:66]: (error) Uninitialized struct member: B.Maso
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\dangnhap.cpp:66]: (error) Uninitialized struct member: B.ngdung
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\dangnhap.cpp:100]: (error) Uninitialized struct member: A.maso
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp:16]: (style) Unused variable: bien2
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp:16]: (style) Unused variable: bien3
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp:16]: (style) Unused variable: bien4
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp:16]: (style) Unused variable: bien5
+[d:\Dropbox\collaborate\thao\BTL2\BTL2\thongtin_canhan.cpp:16]: (style) Unused variable: bien6
+(information) Cppcheck cannot find all the include files (use --check-config for details)
+
+Cppcheck ended: Sun May 21 2017 19:17:37 GMT+0700 (東南アジア標準時)

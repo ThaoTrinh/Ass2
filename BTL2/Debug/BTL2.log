@@ -1,12 +1,10 @@
-﻿Build started 26/05/2017 3:40:26 CH.
+﻿Build started 29/05/2017 2:50:04 CH.
      1>Project "C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\BTL2\BTL2.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\BTL2.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt file_chucnang.cpp
-         file_chucnang.cpp
-     1>c:\users\win 8\dropbox\collaborate\thao\btl2\btl2\file_chucnang.cpp(73): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
-     1>c:\users\win 8\dropbox\collaborate\thao\btl2\btl2\file_chucnang.cpp(131): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Docdulieu.cpp
+         Docdulieu.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Debug\BTL2.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\BTL2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Debug\BTL2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Debug\BTL2.lib" /MACHINE:X86 Debug\Capnhat_file.obj
          Debug\Chucnang.obj
@@ -16,10 +14,10 @@
          Debug\Docdulieu.obj
          Debug\Doi_matkhau.obj
          Debug\file_chucnang.obj
+         Debug\lichsudangnhap.obj
          Debug\main.obj
          Debug\Switch.obj
          Debug\thongtin_canhan.obj
-         Debug\thu.obj
          Debug\Tuychon.obj
          LINK : C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Debug\BTL2.exe not found or not built by the last incremental link; performing full link
          BTL2.vcxproj -> C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Debug\BTL2.exe
@@ -32,4 +30,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.59
+Time Elapsed 00:00:02.55

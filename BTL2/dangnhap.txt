@@ -4,3 +4,4 @@
 4	hao 	luonghao	luonghao
 5	minh	1234		huuminh
 6	nhathoa	1234	hoa
+7	thien	thien	thien

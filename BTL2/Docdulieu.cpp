@@ -52,8 +52,8 @@ bool Dulieu_chucnang(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 
 			stringstream tach(bien);
 			tach>>bien1>>bien2>>bien3>>bien4;
-			cout<<bien1<<" ";
-			cout<<Ngdung_dangnhap.Maso<<endl;
+			//cout<<bien1<<" ";
+			//cout<<Ngdung_dangnhap.Maso<<endl;
 			if(bien1!=Ngdung_dangnhap.Maso) continue;
 			else{
 				B.docgia=bien2;

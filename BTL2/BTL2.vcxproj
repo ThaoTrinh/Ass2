@@ -68,10 +68,10 @@
     <ClCompile Include="Docdulieu.cpp" />
     <ClCompile Include="Doi_matkhau.cpp" />
     <ClCompile Include="file_chucnang.cpp" />
+    <ClCompile Include="lichsudangnhap.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Switch.cpp" />
     <ClCompile Include="thongtin_canhan.cpp" />
-    <ClCompile Include="thu.cpp" />
     <ClCompile Include="Tuychon.cpp" />
   </ItemGroup>
   <ItemGroup>
