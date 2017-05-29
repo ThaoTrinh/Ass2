@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -13,83 +9,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Capnhat_file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dangnhap.cpp">
+    <ClCompile Include="src\Chucnang.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Switch.cpp">
+    <ClCompile Include="src\Chucnang_hientai.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tuychon.cpp">
+    <ClCompile Include="src\Dangki_taikhoan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Docdulieu.cpp">
+    <ClCompile Include="src\dangnhap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Chucnang.cpp">
+    <ClCompile Include="src\Docdulieu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Chucnang_hientai.cpp">
+    <ClCompile Include="src\Doi_matkhau.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="thongtin_canhan.cpp">
+    <ClCompile Include="src\file_chucnang.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dangki_taikhoan.cpp">
+    <ClCompile Include="src\lichsudangnhap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Doi_matkhau.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Capnhat_file.cpp">
+    <ClCompile Include="src\Switch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="file_chucnang.cpp">
+    <ClCompile Include="src\Tuychon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lichsudangnhap.cpp">
+    <ClCompile Include="src\thongtin_canhan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="thuvien_chuan.h">
+    <ClInclude Include="include\Capnhat_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tuychon.h">
+    <ClInclude Include="include\Chucnag_hientai.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="switch.h">
+    <ClInclude Include="include\Chucnang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dangnhap.h">
+    <ClInclude Include="include\Dangki_taikhoan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Docdulieu.h">
+    <ClInclude Include="include\dangnhap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Chucnang.h">
+    <ClInclude Include="include\Docdulieu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Chucnag_hientai.h">
+    <ClInclude Include="include\Doi_matkhau.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="thongtin_canhan.h">
+    <ClInclude Include="include\file_chucnang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dangki_taikhoan.h">
+    <ClInclude Include="include\lichsu_dangnhap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Doi_matkhau.h">
+    <ClInclude Include="include\switch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Capnhat_file.h">
+    <ClInclude Include="include\tuychon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="file_chucnang.h">
+    <ClInclude Include="include\thongtin_canhan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thuvien_chuan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

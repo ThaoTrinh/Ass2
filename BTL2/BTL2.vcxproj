@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Bin|Win32">
+      <Configuration>Bin</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -10,12 +14,47 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Capnhat_file.cpp" />
+    <ClCompile Include="src\Chucnang.cpp" />
+    <ClCompile Include="src\Chucnang_hientai.cpp" />
+    <ClCompile Include="src\Dangki_taikhoan.cpp" />
+    <ClCompile Include="src\dangnhap.cpp" />
+    <ClCompile Include="src\Docdulieu.cpp" />
+    <ClCompile Include="src\Doi_matkhau.cpp" />
+    <ClCompile Include="src\file_chucnang.cpp" />
+    <ClCompile Include="src\lichsudangnhap.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Switch.cpp" />
+    <ClCompile Include="src\thongtin_canhan.cpp" />
+    <ClCompile Include="src\Tuychon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Capnhat_file.h" />
+    <ClInclude Include="include\Chucnag_hientai.h" />
+    <ClInclude Include="include\Chucnang.h" />
+    <ClInclude Include="include\Dangki_taikhoan.h" />
+    <ClInclude Include="include\dangnhap.h" />
+    <ClInclude Include="include\Docdulieu.h" />
+    <ClInclude Include="include\Doi_matkhau.h" />
+    <ClInclude Include="include\file_chucnang.h" />
+    <ClInclude Include="include\lichsu_dangnhap.h" />
+    <ClInclude Include="include\switch.h" />
+    <ClInclude Include="include\thongtin_canhan.h" />
+    <ClInclude Include="include\thuvien_chuan.h" />
+    <ClInclude Include="include\tuychon.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4FF0A5CA-ED1A-4CD3-8AF2-235958A81464}</ProjectGuid>
     <RootNamespace>BTL2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Bin|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
@@ -32,12 +71,26 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Bin|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Bin|Win32'">
+    <IncludePath>C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\BTL2\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Bin|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -59,35 +112,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Capnhat_file.cpp" />
-    <ClCompile Include="Chucnang.cpp" />
-    <ClCompile Include="Chucnang_hientai.cpp" />
-    <ClCompile Include="Dangki_taikhoan.cpp" />
-    <ClCompile Include="dangnhap.cpp" />
-    <ClCompile Include="Docdulieu.cpp" />
-    <ClCompile Include="Doi_matkhau.cpp" />
-    <ClCompile Include="file_chucnang.cpp" />
-    <ClCompile Include="lichsudangnhap.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Switch.cpp" />
-    <ClCompile Include="thongtin_canhan.cpp" />
-    <ClCompile Include="Tuychon.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Capnhat_file.h" />
-    <ClInclude Include="Chucnag_hientai.h" />
-    <ClInclude Include="Chucnang.h" />
-    <ClInclude Include="Dangki_taikhoan.h" />
-    <ClInclude Include="dangnhap.h" />
-    <ClInclude Include="Docdulieu.h" />
-    <ClInclude Include="Doi_matkhau.h" />
-    <ClInclude Include="file_chucnang.h" />
-    <ClInclude Include="switch.h" />
-    <ClInclude Include="thongtin_canhan.h" />
-    <ClInclude Include="thuvien_chuan.h" />
-    <ClInclude Include="tuychon.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

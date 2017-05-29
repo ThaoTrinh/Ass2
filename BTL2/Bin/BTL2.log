@@ -1,0 +1,33 @@
+﻿Build started 29/05/2017 4:00:02 CH.
+     1>Project "C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\BTL2\BTL2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Bin\BTL2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Bin\\" /Fd"Bin\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Bin\BTL2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.lib" /MACHINE:X86 Bin\Capnhat_file.obj
+         Bin\Chucnang.obj
+         Bin\Chucnang_hientai.obj
+         Bin\Dangki_taikhoan.obj
+         Bin\dangnhap.obj
+         Bin\Docdulieu.obj
+         Bin\Doi_matkhau.obj
+         Bin\file_chucnang.obj
+         Bin\lichsudangnhap.obj
+         Bin\main.obj
+         Bin\Switch.obj
+         Bin\thongtin_canhan.obj
+         Bin\Tuychon.obj
+         LINK : C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.exe not found or not built by the last incremental link; performing full link
+         BTL2.vcxproj -> C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\Bin\BTL2.exe;#1" /manifest Bin\BTL2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Bin\BTL2.unsuccessfulbuild".
+         Touching "Bin\BTL2.lastbuildstate".
+     1>Done Building Project "C:\Users\WIN 8\Dropbox\collaborate\thao\BTL2\BTL2\BTL2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.45
