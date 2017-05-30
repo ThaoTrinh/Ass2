@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="93d1c6a7-839e-4fb4-a247-ba66a1a1df60"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="8d6c8242-79f2-4a06-bc66-4b204e7c488b"
+        name="LIBPRO_sreen"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c526278d-4c81-4aa6-aff9-16b9e287ad58"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1ae6dbc3-3b39-4950-82cf-1c716bb5cc7f"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="8c492e82-5229-40d3-97a4-c96b8b2affd9"
+                  LastKnownName="Dang ki"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8b3a95ac-bb00-454d-b334-c253fcdc23a7"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="4a760784-63d6-43e5-92d3-6cd10620b05a"
+                  LastKnownName="Dang nhap"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="20f75a18-d625-4234-ad7d-4f8e41095088"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="8fae952a-c48a-4fc7-8142-ffade3df7d89"
+                  LastKnownName="Thoat"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction
+            Id="4a760784-63d6-43e5-92d3-6cd10620b05a"
+            name="Dang nhap"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e8ad0eb3-a0c1-49f7-8f77-f47529f22205"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8fc7779b-3a01-4fb6-a23e-3a3d43e90629"
+                  LastKnownName="Nguoi dung dang nhap"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction
+            Id="8c492e82-5229-40d3-97a4-c96b8b2affd9"
+            name="Dang ki"
+            isLeaf="false" />
+          <callBehaviorAction
+            Id="8fae952a-c48a-4fc7-8142-ffade3df7d89"
+            name="Thoat"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9562117c-2327-451f-ae82-5b7eb0575203"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="4ae88fd7-7783-4522-8c71-0585a605e284"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode
+            Id="4ae88fd7-7783-4522-8c71-0585a605e284"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="8fc7779b-3a01-4fb6-a23e-3a3d43e90629"
+            name="Nguoi dung dang nhap"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="718ef29b-fa86-4644-b6ea-5e5b1a1be0e9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9b58ecef-cd5b-487e-be68-3219706dd3c2"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9b58ecef-cd5b-487e-be68-3219706dd3c2"
+            name="Decision1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

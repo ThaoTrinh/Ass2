@@ -1,4 +1,5 @@
-#include "dangnhap.h"
+#include <dangnhap.h>
+#include <Docdulieu.h>
 using namespace std;
 
 bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
@@ -27,6 +28,9 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 				time_t now = time(0);
 				localtime(&now);
 				char* dangnhap = ctime(&now);
+
+				// tao ham void?
+				// hàm bool?
 				fstream file("lichsu_dangnhap.txt",ios::app);
 				if(!file.is_open()){
 					cout<<"loi mo file"<<endl;
@@ -38,17 +42,31 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 				// kiemtra = true;
 				// break;
 				return true;
-				// ham tra ve la true
-				// noi cach khac, kiemtra = true;
 			}
 		}
 	}
-	// vi chi khi khong co ket qua moi chay dong nay
-	// return thi ham cung ket thuc luon ma
-	// nen ta cu cout ra roi return false;
-	// if (kiemtra)
-	// break;
-	// else
+
 	return false;
 }
 
+void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
+	while (!kiemtra) {
+		kiemtra = Log_in(Dangnhap, Ngdung_dangnhap);
+		if (!kiemtra) {    
+
+			cout << "Khong hop le ban co muon thu lai hay "
+					"khong?(y/n) "
+					<< endl;
+			string y;
+			getline(cin, y);
+			if (y == "y")
+				continue;
+			return ;
+		}
+		if (!Dulieu_chucnang(Dangnhap, Ngdung_dangnhap)) {
+			cout << "Vai tro cua ban khong hop le";
+			system("pause");
+			return;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="08a6e31d-c0b3-43c4-96e6-d7012f8fda40" name="LIBPRO_sreen" linkedPackageId="944812b3-3c30-4f6e-a5a8-de564881ccfe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="14a171d3-d5b4-411b-a84b-fb7d88f6ee1c">
+      <profileInstance Id="0cb9d764-b410-492a-be3c-1d5454ac818c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8b5b1201-23fc-4a71-970d-b74dacee89a0">
+      <profileInstance Id="4ae06d31-24e4-4bb3-81c7-e4fdd8e30c41" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="35deae92-5b87-4096-9f92-0aa4942152e8" name="LIBPRO_sreen" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8d6c8242-79f2-4a06-bc66-4b204e7c488b" />
+        <nodes>
+          <initialNode Id="71babb54-732a-44a0-ac24-011de6349a5a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c526278d-4c81-4aa6-aff9-16b9e287ad58" />
+            <flowNodeTargets>
+              <controlFlow Id="b93f87bb-c5f7-4808-bcae-a22ba7b46013" isLeaf="false">
+                <callBehaviorActionMoniker Id="1adebc5c-d4e7-473d-85bf-19321d584f86" LastKnownName="Dang ki" />
+                <elementDefinition Id="1ae6dbc3-3b39-4950-82cf-1c716bb5cc7f" />
+              </controlFlow>
+              <controlFlow Id="4d4b50c1-13cb-4baa-b471-4bd19e786901" isLeaf="false">
+                <callBehaviorActionMoniker Id="e3c597ec-af6b-43bf-aa0e-88dabdae0ecb" LastKnownName="Dang nhap" />
+                <elementDefinition Id="8b3a95ac-bb00-454d-b334-c253fcdc23a7" />
+              </controlFlow>
+              <controlFlow Id="40e3da16-a097-4b0e-997a-13f46c3e4fce" isLeaf="false">
+                <callBehaviorActionMoniker Id="16efe70e-e7c7-4798-b63f-77f886d68eec" LastKnownName="Thoat" />
+                <elementDefinition Id="20f75a18-d625-4234-ad7d-4f8e41095088" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction Id="e3c597ec-af6b-43bf-aa0e-88dabdae0ecb" name="Dang nhap" isLeaf="false">
+            <elementDefinition Id="4a760784-63d6-43e5-92d3-6cd10620b05a" />
+            <flowNodeTargets>
+              <controlFlow Id="95682054-f5f1-4de8-b130-aef62b644e58" isLeaf="false">
+                <opaqueActionMoniker Id="115d2623-b17c-43a1-88e8-4ed54b3190c4" LastKnownName="Nguoi dung dang nhap" />
+                <elementDefinition Id="e8ad0eb3-a0c1-49f7-8f77-f47529f22205" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="1adebc5c-d4e7-473d-85bf-19321d584f86" name="Dang ki" isLeaf="false">
+            <elementDefinition Id="8c492e82-5229-40d3-97a4-c96b8b2affd9" />
+          </callBehaviorAction>
+          <callBehaviorAction Id="16efe70e-e7c7-4798-b63f-77f886d68eec" name="Thoat" isLeaf="false">
+            <elementDefinition Id="8fae952a-c48a-4fc7-8142-ffade3df7d89" />
+            <flowNodeTargets>
+              <controlFlow Id="39e6eaff-dc70-427a-8a6d-bbef0e1f9ce9" isLeaf="false">
+                <activityFinalNodeMoniker Id="fc2946f0-96f5-4e15-baf0-1b6dc2cffb44" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9562117c-2327-451f-ae82-5b7eb0575203" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="fc2946f0-96f5-4e15-baf0-1b6dc2cffb44" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4ae88fd7-7783-4522-8c71-0585a605e284" />
+          </activityFinalNode>
+          <opaqueAction Id="115d2623-b17c-43a1-88e8-4ed54b3190c4" name="Nguoi dung dang nhap" isLeaf="false">
+            <elementDefinition Id="8fc7779b-3a01-4fb6-a23e-3a3d43e90629" />
+            <flowNodeTargets>
+              <controlFlow Id="64b5e044-b2f9-42a7-959a-90635acb7ea5" isLeaf="false">
+                <decisionNodeMoniker Id="ca3dcb29-2599-46d7-9ac8-e07652002e56" LastKnownName="Decision1" />
+                <elementDefinition Id="718ef29b-fa86-4644-b6ea-5e5b1a1be0e9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ca3dcb29-2599-46d7-9ac8-e07652002e56" name="Decision1" isLeaf="false">
+            <elementDefinition Id="9b58ecef-cd5b-487e-be68-3219706dd3c2" />
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="944812b3-3c30-4f6e-a5a8-de564881ccfe" name="ModelingProject1">
+    <elementDefinition Id="93d1c6a7-839e-4fb4-a247-ba66a1a1df60" />
+  </package>
+</activityRootModel>

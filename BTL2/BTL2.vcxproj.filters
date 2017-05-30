@@ -13,35 +13,29 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source Files\Dangki">
+      <UniqueIdentifier>{8aa8d748-1515-4203-a324-040e49d79aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dangnhap">
+      <UniqueIdentifier>{be613041-646c-44f4-aab5-49309e9c8625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Caidat">
+      <UniqueIdentifier>{66a4fe50-f3bb-4192-9e69-36b8e15853f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chucnang">
+      <UniqueIdentifier>{54d60c0e-a25e-461b-9acf-9f3f94fc3905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Caidat\Matkhau">
+      <UniqueIdentifier>{ecf5aa66-5025-4785-be0c-0d72d2b2c7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Caidat\Chucnang">
+      <UniqueIdentifier>{b901805d-027b-4445-9458-3843234f6bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{78562aff-c969-42f4-956f-53a18081cc29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Capnhat_file.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Chucnang.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Chucnang_hientai.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Dangki_taikhoan.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dangnhap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Docdulieu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Doi_matkhau.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\file_chucnang.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lichsudangnhap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,8 +45,35 @@
     <ClCompile Include="src\Tuychon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Dangki_taikhoan.cpp">
+      <Filter>Source Files\Dangki</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Docdulieu.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Capnhat_file.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Doi_matkhau.cpp">
+      <Filter>Source Files\Caidat\Matkhau</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lichsudangnhap.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chucnang.cpp">
+      <Filter>Source Files\Caidat\Chucnang</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chucnang_hientai.cpp">
+      <Filter>Source Files\Chucnang</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dangnhap.cpp">
+      <Filter>Source Files\Dangnhap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_chucnang.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
     <ClCompile Include="src\thongtin_canhan.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\File</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

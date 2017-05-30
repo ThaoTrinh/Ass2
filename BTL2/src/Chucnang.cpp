@@ -1,24 +1,30 @@
-﻿#include "Chucnang.h"
-#include "Docdulieu.h"
-#include "Switch.h"
-#include "Chucnag_hientai.h"
+﻿#include <Chucnang.h>
+#include <Docdulieu.h>
+#include <switch.h>
+#include <Chucnag_hientai.h>
 using namespace std;
 
 bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
+	
+	// xuất chức năng hiện có
 	Xuatchucnang(Dangnhap,Ngdung_dangnhap);
 
+	//--------------------------------------------------
 	cout << "Ban muon them chuc nang nao? " << endl;
 	cout << "1.Doc gia" << endl
 	     << "2.Thu thu" << endl
 	     << "3.Quan li nguoi dung" << endl;
 	cout << endl;
-	int chon;
+	//--------------------------------------------------
+
+	
 	bool kiem = false;
 	while (!kiem) {
 		cout << "Lua chon cua ban la: ";
+		int chon = 0;
 		cin >> chon;
 		switch (chon) {
-			case 1:
+			case 1:{ // vì khai biến FILE nên phải để trong tầm vực
 				if ((Ngdung_dangnhap.ngdung.docgia == 1)) {
 					cout << "Chuc nang nay ban da co" << endl;
 					cout << "Ban co muon chon chuc nang khac khong?(y/n) ";
@@ -27,26 +33,29 @@ bool Themchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 					getline(cin, y);
 					if (y == "y") {
 						kiem = false;
+						break;
 					}
-					else {
-						return true;
-					}
-				}
-				else {
-					fstream FILE("themchucnang.txt");
-						if(!FILE.is_open()){
-							cout<<"loi mo file"<<endl;
-						}
-
-						FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
-
-						FILE.close();
-					cout << "Yeu cau da duoc ghi lai"<<endl;
-					system("pause");
-					kiem = true;
 					return true;
-				}
-				break;
+
+					// kiểu gì cũng break với return
+					// bỏ else
+				}// hết if
+
+				fstream FILE("themchucnang.txt");
+					if(!FILE.is_open()){
+						cout<<"loi mo file"<<endl;
+					}
+
+					FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+					FILE.close();
+				cout << "Yeu cau da duoc ghi lai"<<endl;
+				system("pause");
+				// kiem = true;
+				// chỗ này để kiem = true chi? gì cũng return mà?
+				return true;
+			}// case độc giả
+			// mấy cái dưới làm giống vậy
 			case 2:
 				if ((Ngdung_dangnhap.ngdung.thuthu == 2)) {
 					cout << "Chuc nang nay ban da co" << endl;

@@ -1,0 +1,9 @@
+0 |hoten|namsinh|diachi|truong|khoa
+1 |Trinh Thi Thu Thao|1998|Phu Yen|Bach Khoa|May tinh|
+2 |anhkhoa|1998|govap|bk|mt|
+3 |thao|1998|py|bk|mt|
+4 |thuan|bd|bd|bk|mt|
+5 |hao|1998|bd|bk|mt|
+6|trinh nhat hoa|2005|py|nht|cap2|
+
+7|nguyen van thien|1998|phu yen|y duoc|co truyen|

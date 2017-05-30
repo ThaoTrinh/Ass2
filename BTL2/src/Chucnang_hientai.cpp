@@ -1,6 +1,6 @@
-#include "Chucnag_hientai.h"
-#include "Docdulieu.h"
-#include "switch.h"
+#include <Chucnag_hientai.h>
+#include <Docdulieu.h>
+#include <switch.h>
 using namespace std;
 
 void Xuatchucnang(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap){

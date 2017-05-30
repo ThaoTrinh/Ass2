@@ -1,7 +1,7 @@
-#include "tuychon.h"
+#include <tuychon.h>
 using namespace std;
 
-int Tuychon(){
+int Tuychon(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	system("cls");
 	cout << "CHAO MUNG DEN VOI LIBPR0" << endl;
 	cout << "_________________________________________________" << endl;

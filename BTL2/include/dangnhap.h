@@ -1,11 +1,10 @@
 #ifndef DANGNHAP
 #define DANGNHAP
 
-#include "thuvien_chuan.h"
+#include <thuvien_chuan.h>
+#include <Docdulieu.h>
 
 bool Log_in(std::vector<Nguoidung>&,Nguoidung &Ngdung_dangnhap);
-//bool Dangki(std::vector<Nguoidung> &);
-////bool thongtin_dangki(std::vector<thongtin_nguoidung> );
-//bool thongtin_dangki(std::vector<thongtin_nguoidung> &Dangki_taikhoan,Nguoidung &Ngdung_dangnhap ,std::vector<Nguoidung> &Dangnhap);
-//bool Chucnang_dangki(std::vector<thongtin_nguoidung>& Dangki_taikhoan, Nguoidung& Ngdung_dangnhap,std::vector<Nguoidung>& Dangnhap);
+void Dangnhapvao(std::vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap);
+
 #endif
