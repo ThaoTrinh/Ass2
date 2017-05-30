@@ -6,6 +6,10 @@
 #include <Doi_matkhau.h>
 #include <file_chucnang.h>
 #include <lichsu_dangnhap.h>
+#include <tuychonsach.h>
+#include <switch_sach.h>
+#include <insach.h>
+#include <nhapphieu.h>
 
 using namespace std;
 
@@ -15,9 +19,9 @@ int Caidat(){
 	cout<<"Moi ban chon tuy chon: "<<endl;
 	cout<<"1.	Them chuc nang"<<endl;
 	cout<<"2.	Huy chuc nang"<<endl;
-	cout<<"3.	Them tai khoan"<<endl;
-	cout<<"4.	Doi mat khau"<<endl;
-	cout<<"5.	Quay lai"<<endl;
+	//cout<<"3.	Them tai khoan"<<endl;
+	cout<<"3.	Doi mat khau"<<endl;
+	cout<<"4.	Quay lai"<<endl;
 
 	cout<<"Lua chon cua ban la: ";
 	int chon;
@@ -41,15 +45,15 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 			case 2:
 				Huychucnang(Dangnhap,Ngdung_dangnhap);
 				break;
-			case 3:break;
-			case 4:
+			//case 3:break;
+			case 3:
 				cin.ignore();
 				if(!Doimatkhau(Dangnhap,Ngdung_dangnhap))
 					tuychinh=false;
 				// cả if và else đều break 
 				// thì sao không để ngoài
 				break;
-			case 5:
+			case 4:
 				//quay lại cái switch ở trên
 				/*tuychinh=false;
 				break;*/
@@ -175,8 +179,12 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 	///// từ đó mới hiện lại màn hình chọn chức năng
 
 	switch(Tuychon_docgia(Dangnhap,Ngdung_dangnhap)){
-		case 1: break;
-		case 2: break;
+		case 1:
+			Switch_timkiem();
+			break;
+		case 2: 
+			 Nhapphieumuonsach();
+			break;
 		case 3:break;
 		case 4:{
 			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){

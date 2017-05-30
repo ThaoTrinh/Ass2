@@ -1,0 +1,24 @@
+# bỏ thư mục .vscode của Visual Studio Code,
+# cái này của Khoa
+**/.vscode
+
+# bỏ thư mục build của Khoa
+**/build
+
+# bỏ các file exe, mỗi người tự build lại
+**/*.exe
+
+# bỏ file CMakeLists của Khoa để build
+**/CMakeLists.txt
+
+# bỏ thư mục rác bin
+/BTL2/bin/*
+
+# bỏ thư mục rác bin-release
+/BTL2/bin-release/*
+
+# bỏ thư mục rác debug
+/BTL2/Debug/*
+
+# bỏ thư mục rác release
+/BTL2/Release/*

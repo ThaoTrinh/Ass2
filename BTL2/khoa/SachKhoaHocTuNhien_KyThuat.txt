@@ -1,0 +1,26 @@
+0 |Ten sach|Tac gia|So luong
+1 |Ke chuyen ve kim loai|Venetxki|20|
+2 |Nghien cuu phan tam hoc|Signmund Freud|32|
+3 |The gioi nghich|Michael Crichton|12|
+4 |Con duong phia truoc|Bill Gate|22|
+5 |Loi tien tri nui Andes|James Redfield|69|
+6 |Tien kiep va luan hoi|Weiss|48|
+7 |Tam muoi ngay vong quanh the gioi|Jules Verne|61|
+8 |Tong hanh dinh trong Mua Xuan Toan Thang|Vo Nguyen Giap|65|
+9 |Vu no Big Bang|Brown|49|
+10|Gene vi ky|Richard Dawkins|20|
+11|Cau truc cac cuoc cach mang khoa hoc|Thomas Kuhn|32|
+12|Nguon goc cac loai|Charles Darwin|12|
+13|Sung, vi trung va thep|Jared Diamond|22|
+14|Ban thiet ke vi dai|Stephen Hawking|22|
+15|Vu tru|Carl Sagan|69|
+16|Tu duy nhanh va cham|Daniel Kahneman|48|
+17|Nhung ke xuat chung|Malcolm Gladwell|61|
+18|Vat lieu va thiet bi Nano|Truong Van Tan|49|
+19|Cong nghe CNC|Tran Van Dich|22|
+20|Tu dong hoa trong cong nghiep|Tran Thu Ha|22|
+21|Giao dien nguoi va may HDMI|Tran Thu Ha|16|
+22|Mang nhiet|Nguyen Cong Han|12|
+23|Cong nghe cac hop chat vo co|Nguyen Hoa Toan|24|
+24|Vi dieu khien voi lap trinh C|Ngo Dien Tap|42
+25|Hoa hoc thuc pham|Hoang Kim Anh|24

@@ -1,0 +1,11 @@
+0 |Ten sach|Tac Gia|So Luong
+1 |Giai tich 2|Nguyen Dinh Huy|10|
+2 |Vat li 1|XXXX|10|
+3 |Hoa dai cuong|Nguyen Dinh Soa|15|
+4 |Vat li 2|XXXX|15|
+5 |Giai tich 1|Nguyen Dinh Huy|15|
+6 |Thi nghiem vat li|XXXX|10|
+7 |Dai so tuyen tinh|Nguyen Huu Hiep|20|
+8 |Mo hinh hoa toan hoc|XXXX|20|
+9 |Toan roi rac|XXXX|25|
+10|Ky thuat lap trinh|XXXX|25|

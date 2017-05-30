@@ -34,6 +34,15 @@
     <Filter Include="Source Files\File">
       <UniqueIdentifier>{78562aff-c969-42f4-956f-53a18081cc29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Sach">
+      <UniqueIdentifier>{b06984fe-6b4b-4b72-958a-132aa240f584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sach\Tuychon">
+      <UniqueIdentifier>{be1a5ccf-f2d4-47a7-81da-78bdec2bb910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sach\Switch">
+      <UniqueIdentifier>{fc4cf948-b32c-415f-a173-eb4b0251a7cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -75,6 +84,18 @@
     <ClCompile Include="src\thongtin_canhan.cpp">
       <Filter>Source Files\File</Filter>
     </ClCompile>
+    <ClCompile Include="src\switch_sach.cpp">
+      <Filter>Source Files\Sach\Switch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\insach.cpp">
+      <Filter>Source Files\Sach\Tuychon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nhapphieu.cpp">
+      <Filter>Source Files\Sach\Tuychon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tuychonsach.cpp">
+      <Filter>Source Files\Sach\Tuychon</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Capnhat_file.h">
@@ -114,6 +135,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\thuvien_chuan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\insach.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nhapphieu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\switch_sach.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tuychonsach.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,11 +27,15 @@
     <ClCompile Include="src\Docdulieu.cpp" />
     <ClCompile Include="src\Doi_matkhau.cpp" />
     <ClCompile Include="src\file_chucnang.cpp" />
+    <ClCompile Include="src\insach.cpp" />
     <ClCompile Include="src\lichsudangnhap.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Nhapphieu.cpp" />
     <ClCompile Include="src\Switch.cpp" />
+    <ClCompile Include="src\switch_sach.cpp" />
     <ClCompile Include="src\thongtin_canhan.cpp" />
     <ClCompile Include="src\Tuychon.cpp" />
+    <ClCompile Include="src\tuychonsach.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Capnhat_file.h" />
@@ -42,11 +46,15 @@
     <ClInclude Include="include\Docdulieu.h" />
     <ClInclude Include="include\Doi_matkhau.h" />
     <ClInclude Include="include\file_chucnang.h" />
+    <ClInclude Include="include\insach.h" />
     <ClInclude Include="include\lichsu_dangnhap.h" />
+    <ClInclude Include="include\nhapphieu.h" />
     <ClInclude Include="include\switch.h" />
+    <ClInclude Include="include\switch_sach.h" />
     <ClInclude Include="include\thongtin_canhan.h" />
     <ClInclude Include="include\thuvien_chuan.h" />
     <ClInclude Include="include\tuychon.h" />
+    <ClInclude Include="include\tuychonsach.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4FF0A5CA-ED1A-4CD3-8AF2-235958A81464}</ProjectGuid>

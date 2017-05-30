@@ -9,6 +9,7 @@
 #include <cmath>
 #include <vector>
 #include <ctime>
+#include <limits>
 
 extern bool kiemtra;
 extern bool tuychinh;

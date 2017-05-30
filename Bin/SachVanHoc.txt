@@ -1,0 +1,11 @@
+0 |Ten sach|Tac gia|So luong
+1 |Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|50|
+2 |Hon Truong Ba da hang thit|XXXX|20|
+3 |Chiec luoc nga|XXXX|15|
+4 |Hom nay toi that tinh|XXXX|6|
+5 |Vo Nhat|Kim Lan|5|
+6 |Vo chong A Phu|To Hoai|10|
+7 |Hai dua tre|Thach Lam|10|
+8 |Hanh phuc mot tang gia|Vu Trong Phung|15|
+9 |Chi Pheo|Nam Cao|6|
+10|De men phieu luu ki|To Hoai|10|
